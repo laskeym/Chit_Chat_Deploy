@@ -1,0 +1,11 @@
+{
+  "name": "Node_Socket_Chat",
+  "version": "0.0.1",
+  "private": "true",
+  "description": "Chat application using Node.js and Socket.io",
+  "author": "Mark Laskey, Danilo Inoa, Ana Ocampo, Julian Nwosu",
+  "dependencies": {
+    "express": "4.13.4",
+    "socket.io": "1.4.5"
+  }
+}

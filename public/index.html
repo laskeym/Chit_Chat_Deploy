@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Chit Chat</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script type="text/javascript" src="js/client.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+ <div class="nav">
+    <div class="container">
+      <ul class="pull-left">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+		<li><a href="#">Chat</a></li>
+      </ul>
+      <ul class="pull-right">
+      </ul>
+    </div>
+  </div>
+  
+  <div class="container">
+	<center>
+		<div id="title" class="container">
+			<h1>CHIT CHAT<i class="fa fa-comments-o"></i></h1></div>
+	
+	<div id="header" class="container">
+		<div class="container">
+			<p class="lead">
+				<b>An easy and fast way
+					<br>to chat with your friends.</b></p>
+			<br>
+			<br>
+
+	<div id="nickWrap" class = "container">
+		<p id=>Enter a username:</p>
+		<p id="nickError"></p>
+		<form id="setNick">
+			<input size="35" id="nickname" autocomplete="off" maxlength="12" autofocus></input>
+			<input id="join" type="submit" value="Join"></input>
+		</form>
+	
+	</div></div></div></center></div>
+	
+	<center><div id="chat_container">
+		<div id="chatwindow">
+			<div id="chat"></div>
+			<form id="send-message">
+				<input size="33" id="message" autocomplete="off" maxlength="271"></input>
+				<input id="send" type="submit" value="Send" class="btn btn-default btn-xs"></input>
+			</form>
+		</div>
+		<div id="userwindow">
+			<div id="userlist"></div>
+		</div>
+	</div></center>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/js/animate.js"></script>
+	
+</body>
+
+</html>

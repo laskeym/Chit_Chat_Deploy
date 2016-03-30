@@ -1,0 +1,152 @@
+		body {
+			height: 100%;
+			width: 100%;
+			background: url('http://cdn29.us1.fansshare.com/images/backgroundhd/romantic-big-beach-space-in-bridge-with-light-effect-in-cityscape-background-hd-wallpaper-abstract-hd-wallpaper-picture-background-hd-1267972802.jpg') no-repeat center center fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		
+		li{
+			list-style-type:none;
+		}
+		
+		#chat li:nth-child(odd){
+			background:#eee;
+		}
+		
+		.error{
+			color:red;
+		}
+		
+		.nav{
+			padding-top:10px;
+			float:left;
+		}
+		.nav a {
+			text-shadow: 2px 2px black;
+			width:100%;
+			color: #F0FFFF;
+			font-size: 14pt;
+			font-weight: bold;
+			text-transform: uppercase; 
+		}
+		
+		.nav a:hover{
+			text-decoration:none;
+		}
+
+		.nav li {
+			display: inline;
+			padding: 24px 35px;
+			margin-left:2em;
+		}
+		
+		.update2{
+			color:#e60000;
+		}
+		
+		#title h1 {
+			color: black;
+			font-size: 70px;
+			font-family: 'Shift', sans-serif;
+			font-weight: bold;
+			text-shadow: 0 1px 3px rgba(0,0,0,.5);
+			clear:left;
+		}
+		
+		#header h1 {
+			color: #fff;
+			font-size: 48px;
+			font-family: 'Shift', sans-serif;
+			font-weight: bold;
+		}
+
+		#header p {
+			font-size: 24px;
+			color: #fff;
+
+			text-shadow: 0 1px 3px rgba(0,0,0,.5);
+		}
+		
+		
+		#chat_container{
+			display:inline-block;
+			text-align:left;
+			width:50%;
+			margin-left:10px;
+			padding:5px;
+			background-color:gray;
+			border-style:solid;
+			border-width:1px;
+			white-space:nowrap;
+			overflow:hidden;
+			-webkit-box-sizing:border-box;
+			-moz-box-sizing:border-box;
+			box-sizing:border-box;
+		}
+		
+		#chatwindow{
+			display:inline-block;
+			width:70%;
+			
+		}
+		
+		#chat{
+			font-family: 'Shift', sans-serif;
+			font-size: 12pt;
+			height:500px;
+			width:94%;
+			word-wrap:break-word;
+			white-space:normal;
+			border-style:solid;
+			border-width:1px;
+			margin:5px;
+			padding:10px;
+			overflow:auto;
+			background-color:white;
+		}
+		
+		#message{
+			width:175.5%;
+			border-style:solid;
+			border-width:1px;
+			margin-right:5px;
+		}
+		
+		#nickWrap{
+			margin-left:10px;
+		}
+		
+		#send{
+			border-radius:0;
+			width:20%;
+		}
+
+		#send-message{
+			float:left;
+			font-family: 'Shift', sans-serif;
+			margin:5px;
+		}
+		
+		#userwindow{
+			display:inline-block;
+			width:30%;
+		}
+		
+		#userlist{
+			font-family: 'Shift', sans-serif;
+			font-size:12pt;
+			height:500px;
+			word-wrap:break-word;
+			white-space:normal;
+			border-style:solid;
+			border-width:1px;
+			margin-top:5px;
+			margin-bottom:5px;
+			margin-right:10px;
+			padding:10px;
+			overflow:auto;
+			background-color:white;
+		}
