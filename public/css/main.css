@@ -1,152 +1,303 @@
-		body {
-			height: 100%;
-			width: 100%;
-			background: url('http://cdn29.us1.fansshare.com/images/backgroundhd/romantic-big-beach-space-in-bridge-with-light-effect-in-cityscape-background-hd-wallpaper-abstract-hd-wallpaper-picture-background-hd-1267972802.jpg') no-repeat center center fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-		}
-		
-		li{
-			list-style-type:none;
-		}
-		
-		#chat li:nth-child(odd){
-			background:#eee;
-		}
-		
-		.error{
-			color:red;
-		}
-		
-		.nav{
-			padding-top:10px;
-			float:left;
-		}
-		.nav a {
-			text-shadow: 2px 2px black;
-			width:100%;
-			color: #F0FFFF;
-			font-size: 14pt;
-			font-weight: bold;
-			text-transform: uppercase; 
-		}
-		
-		.nav a:hover{
-			text-decoration:none;
-		}
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-image: url("http://njtod.org/wp-content/uploads/2015/03/INDG_coworkingspacewlibrary_3-copy.jpg");
+  background-position: left;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  left: 0;
+  margin: 0;
+  position: fixed;
+  /*background-color: #F2F2F2 !important;*/
+}
+.update2 {
+  color: #e60000;
+}
+.error {
+  color: red;
+}
 
-		.nav li {
-			display: inline;
-			padding: 24px 35px;
-			margin-left:2em;
-		}
-		
-		.update2{
-			color:#e60000;
-		}
-		
-		#title h1 {
-			color: black;
-			font-size: 70px;
-			font-family: 'Shift', sans-serif;
-			font-weight: bold;
-			text-shadow: 0 1px 3px rgba(0,0,0,.5);
-			clear:left;
-		}
-		
-		#header h1 {
-			color: #fff;
-			font-size: 48px;
-			font-family: 'Shift', sans-serif;
-			font-weight: bold;
-		}
+#whisper{
+	list-style-type:none;
+	color: gray;
+	font-style: italic;
+}
 
-		#header p {
-			font-size: 24px;
-			color: #fff;
+/*NAV BAR START*/
 
-			text-shadow: 0 1px 3px rgba(0,0,0,.5);
-		}
-		
-		
-		#chat_container{
-			display:inline-block;
-			text-align:left;
-			width:50%;
-			margin-left:10px;
-			padding:5px;
-			background-color:gray;
-			border-style:solid;
-			border-width:1px;
-			white-space:nowrap;
-			overflow:hidden;
-			-webkit-box-sizing:border-box;
-			-moz-box-sizing:border-box;
-			box-sizing:border-box;
-		}
-		
-		#chatwindow{
-			display:inline-block;
-			width:70%;
-			
-		}
-		
-		#chat{
-			font-family: 'Shift', sans-serif;
-			font-size: 12pt;
-			height:500px;
-			width:94%;
-			word-wrap:break-word;
-			white-space:normal;
-			border-style:solid;
-			border-width:1px;
-			margin:5px;
-			padding:10px;
-			overflow:auto;
-			background-color:white;
-		}
-		
-		#message{
-			width:175.5%;
-			border-style:solid;
-			border-width:1px;
-			margin-right:5px;
-		}
-		
-		#nickWrap{
-			margin-left:10px;
-		}
-		
-		#send{
-			border-radius:0;
-			width:20%;
-		}
+#topheader {
+  /*background: rgba(225, 225, 225, .3);*/
+  /*background-image: linear-gradient(to bottom, rgba(51, 52, 71, 0.7), rgba(51, 52, 71, 0));*/
+  /*background-color: white;*/
+  background: rgba(0,	0,	0, .9);
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 40px;
+}
+.nav {
+  width: 100%;
+  padding-right:5%;
+}
+.nav ul {
+  margin-top: 10px;
+}
+#home-link:hover {
+  cursor: pointer;
+  color: #A9E2F3 !important;
+}
+#about-link:hover {
+  cursor: pointer;
+  color: #A9E2F3 !important;
+}
+#home-link:focus {
+  color: pink;
+}
+#about-link:focus {
+  color:pink;
+}
+.nav a {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 16px 20px;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  font-family: Muli;
+}
+.nav li {
+  display: inline;
+}
 
-		#send-message{
-			float:left;
-			font-family: 'Shift', sans-serif;
-			margin:5px;
-		}
-		
-		#userwindow{
-			display:inline-block;
-			width:30%;
-		}
-		
-		#userlist{
-			font-family: 'Shift', sans-serif;
-			font-size:12pt;
-			height:500px;
-			word-wrap:break-word;
-			white-space:normal;
-			border-style:solid;
-			border-width:1px;
-			margin-top:5px;
-			margin-bottom:5px;
-			margin-right:10px;
-			padding:10px;
-			overflow:auto;
-			background-color:white;
-		}
+/*NAV BAR END*/
+
+
+/*HOME PAGE START*/
+
+.welcome-page {
+  background: rgba(225, 225, 225, .3);
+  height: 100%;
+  color: white;
+  font-family: Muli;
+}
+#welcome-text {
+  margin-top: 10%;
+  height: inherit;
+  width: 100%;
+  position: absolute;
+  padding: 20px;
+}
+.welcome-page h1 {
+  font-family: 'Shift', sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-shadow: 0 3px 3px rgba(225, 225, 225, .8);
+  color: black !important;
+  font-size: 70px !important;
+}
+.welcome-page p {
+  margin-top: 40px;
+  padding: 15px;
+  font-family: 'Cedarville Cursive';
+  text-shadow: 0 2px 2px rgba(225, 225, 225, .8);
+  color: black !important;
+  font-size: 25px !important;
+}
+#enterchat {
+  color: white !important;
+  border-style: double;
+  border-width:thick;
+  padding: 7px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, .6);
+}
+
+/*NAV BAR END*/
+
+
+/*ABOUT PAGE START*/
+
+#aboutpage {
+  height: 95%;
+  background-color: white;
+  display: none;
+  margin-left: 30px;
+  margin-right: 30px;
+  position: relative;
+  overflow: auto !important;
+  padding-bottom: 30px;
+}
+#aboutpage #about-intro h1 {
+  text-shadow: 0 3px 3px rgba(0, 0, 0, .5);
+  font-family: 'Amatic SC';
+  font-size: 80px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: solid;
+}
+#aboutpage #about-intro p {
+  color: #777777;
+  font-family: Arial;
+  font-size: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+#the-crew-section {
+  font-family: Muli;
+  height: auto;
+  width: auto;
+  position: relative;
+  margin-left: 30px;
+  margin-right: 30px;
+ /* margin-top: 20%;*/
+  margin-bottom: 50px;
+  overflow: auto !important;
+}
+#crew-intro h1 {
+  text-shadow: 0 3px 3px rgba(0, 0, 0, .5);
+  font-size: 80px !important;
+  font-family: 'Amatic SC';
+  /*text-shadow: 0 3px 3px rgba(0, 0, 0, .5);*/
+  text-transform: uppercase;
+  border-bottom: solid;
+}
+#crew-members {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-bottom: solid;
+  overflow-x:hidden;
+}
+.thumbnail {
+  border-style: none !important;
+}
+.thumbnail #crew-links {
+  border-top: dotted;
+  border-width: thin;
+}
+
+/*ABOUT PAGE END*/
+
+
+/*CREATE USERNAME PAGE START*/
+
+#main-content {
+  display: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(225, 225, 225, .5);
+}
+#title {
+  margin-top: 45px !important;
+}
+#title h1 {
+  color: black;
+  font-size: 70px;
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+  text-shadow: 0 2px 3px rgba(225, 225, 225, .5);
+}
+#header {
+  margin-top: 50px;
+}
+#header p {
+  font-weight: bold;
+  font-family:fantasy;
+  font-size: 24px;
+  color: black;
+  text-shadow: 0 1px 3px rgba(225, 225, 225, .5);
+}
+
+/*CREATE USERNAME PAGE END*/
+
+
+/*CHAT PAGE START START*/
+
+#chat-container {
+  display: none;
+  height: 95%;
+  width: 100%;
+  white-space: nowrap;
+  overflow: auto;
+  position: relative;
+}
+#userwindow {
+  background: rgba(225, 225, 225, .6);
+  margin-top: 20px;
+  margin-left: 20px;
+  float: left;
+  height: inherit;
+  width: 30%;
+  position: relative;
+  font-family: Muli;
+  font-size: 20px;
+  overflow: auto;
+  color: black;
+}
+#username-title {
+  font-family: Muli;
+  text-shadow: 0 3px 3px rgba(0, 0, 0, .5);
+  font-size: 40px;
+  text-transform: uppercase;
+  border-bottom: solid;
+}
+#userwindow ul {
+  list-style-type: none;
+  font-family: Muli;
+  font-size: 24px;
+  text-shadow: 0 3px 3px rgba(0, 0, 0, .5);
+}
+#chatwindow {
+  display: inline-block;
+  overflow: auto !important;
+  margin-top: 20px;
+  margin-right: 20px;
+  position: relative;
+  float: right;
+  height: inherit;
+  width: 65%;
+  font-family: Muli;
+  font-size: 20px;
+  background-color: white;
+}
+#chat {
+  margin: 10px;
+  display: block;
+  padding: 10px;
+  position: relative;
+  float: right;
+  height: 75%;
+  width: 100%;
+  font-family: Muli;
+  font-size: 20px;
+  overflow:auto;
+  word-wrap:break-word;
+  white-space:normal;
+}
+#input-message {
+  border-top: dotted;
+  float: right;
+  clear: right;
+  position: relative;
+  font-family: Muli;
+  font-size: 12px;
+  display: table-cell;
+  width: 100%;
+  padding-top: 10px;
+}
+#message {
+  width: 700px;
+}
+#msg{
+	list-style-type:none;
+}
+

@@ -1,72 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Chit Chat</title>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-	<script type="text/javascript" src="js/client.js"></script>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Muli" />
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Schoolbell" />
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Amatic+SC" />
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cedarville+Cursive" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
- <div class="nav">
-    <div class="container">
-      <ul class="pull-left">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-		<li><a href="#">Chat</a></li>
-      </ul>
-      <ul class="pull-right">
-      </ul>
-    </div>
-  </div>
-  
-  <div class="container">
-	<center>
-		<div id="title" class="container">
-			<h1>CHIT CHAT<i class="fa fa-comments-o"></i></h1></div>
-	
-	<div id="header" class="container">
-		<div class="container">
-			<p class="lead">
-				<b>An easy and fast way
-					<br>to chat with your friends.</b></p>
-			<br>
-			<br>
+	<!-- NAV BAR START -->
+	<div id="topheader">
+		<div class="nav">
+			<ul class="pull-right">
+				<li><a class="active" id="home-link" href="#home">Home</a></li>
+				<li><a class="active" id="about-link" href="#about">About</a></li>
+				<!-- <li><a class="active" id="chat-link" href="#chatpage">Chat</a></li> -->
+			</ul>
+		</div>
+	</div>
+	<!-- NAV BAR END -->
 
-	<div id="nickWrap" class = "container">
-		<p id=>Enter a username:</p>
-		<p id="nickError"></p>
-		<form id="setNick">
-			<input size="35" id="nickname" autocomplete="off" maxlength="12" autofocus></input>
-			<input id="join" type="submit" value="Join"></input>
-		</form>
-	
-	</div></div></div></center></div>
-	
-	<center><div id="chat_container">
-		<div id="chatwindow">
-			<div id="chat"></div>
-			<form id="send-message">
-				<input size="33" id="message" autocomplete="off" maxlength="271"></input>
-				<input id="send" type="submit" value="Send" class="btn btn-default btn-xs"></input>
+	<!-- HOME PAGE START -->
+	<div class="welcome-page">
+		<div id="welcome-text" align="center">
+			<h1>Chit Chat <i class="fa fa-comments-o"></i></h1>
+			<p>An easy and fast way
+				<br>to chat with your friends.</p>
+			<a id="enterchat" class="active" href="#home" role="button">ENTER <i class="fa fa-comment" aria-hidden="true"></i></a>
+		</div>
+	</div>
+	<!-- HOME PAGE END -->
+
+
+	<!-- ABOUT PAGE START -->
+	<div id="aboutpage" align="center">
+		<div id="about-intro">
+			<h1> ABOUT US</h1>
+			<p>Chit Chat is a chat application designed for the simple purpose of interacting with people across the web. Still in the early stages, the application was designed with basic functionality where multiple sessions can connect to a hosted web server via
+				an inputted username. Upon completion of a valid username, the session is established which then displays the next page where a list of connected users are present alongside an area for the users to message one another.
+				<br>
+				<br> Chit Chat operates off of the NodeJS asynchronous, event driven framework which is able to handle simultaneous connections. ExpressJS, a web application framework that works in tandem with Node, handles the webpage routes such as the About Chit Chat
+				page you are currently reading.
+				<br>
+				<br> Chit Chat was created by a group of college students at William Paterson University located in Wayne, New Jersey. The application was constructed as a senior class project with a duration of less than a full semester (about three and a half months).
+				Information about the students and the university can be found below.
+
+			</p>
+		</div>
+
+		<!-- CREW MEMBERS START -->
+		<div id="the-crew-section">
+			<div id="crew-intro">
+				<h1 align="center"> meet the crew </h1>
+			</div>
+
+			<div id="crew-members">
+				<div class="row">
+					<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+						<div class="thumbnail">
+							<img class="img-circle" src="http://i1258.photobucket.com/albums/ii526/itsanakatrina/chat_app/ana_Fotor_zpscyl1npyy.jpg">
+							<div class="caption" align="center">
+								<h3>Ana Ocampo</h3>
+								<p>This is Ana. She took charge of web design.
+									<br> Want to know more? Connect with her.
+								</p>
+								<p id="crew-links"><a href="https://www.linkedin.com/in/ocampoana" target="_blank" class="btn" role="button"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+									<a href="https://github.com/itsanakatrina" target="_blank" class="btn" role="button"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+									<a href="https://www.instagram.com/itsanakatrina/" target="_blank" class="btn" role="button"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+						<div class="thumbnail">
+							<img class="img-circle" src="http://i1258.photobucket.com/albums/ii526/itsanakatrina/chat_app/mark_Fotor_zpsiokvklg8.jpg">
+							<div class="caption" align="center">
+								<h3>Mark Laskey</h3>
+								<p>This is Mark. He took charge of the functionality.
+									<br> Want to know more? Connect with him.
+								</p>
+								<p id="crew-links"><a href="https://www.linkedin.com/in/mlask13" target="_blank" class="btn" role="button"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+									<a href="https://www.facebook.com/FactionZero" target="_blank" class="btn" role="button"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+									<a href="https://www.instagram.com/m_lask13/" target="_blank" class="btn" role="button"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+						<div class="thumbnail">
+							<img class="img-circle" src="http://i1258.photobucket.com/albums/ii526/itsanakatrina/chat_app/danny_Fotor_zpsuvcnrl1u.jpg">
+							<div class="caption" align="center">
+								<h3>Danilo Inoa</h3>
+								<p>This is Danny. He helped with the web development.
+									<br> Want to know more? Connect with him.
+								</p>
+								<p id="crew-links"><a href="https://www.linkedin.com/in/danilo-e-inoa-jr-10308674" target="_blank" class="btn" role="button"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+									<a href="https://www.facebook.com/inoa2" target="_blank" class="btn" role="button"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+									<a href="https://www.instagram.com/da.nil.o/" target="_blank" class="btn" role="button"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+						<div class="thumbnail">
+							<img class="img-circle" src="http://i1258.photobucket.com/albums/ii526/itsanakatrina/chat_app/julian_Fotor_zpsveqmrcre.jpg">
+							<div class="caption" align="center">
+								<h3>Julian Nwosu</h3>
+								<p>This is Julian. He helped with the functionality.
+									<br> Want to know more? Connect with him.
+								</p>
+								<p id="crew-links"><a href="https://www.facebook.com/YoungJulz?fref=ts" target="_blank" class="btn" role="button"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+									<a href="https://www.instagram.com/youngjulz/" target="_blank" class="btn" role="button"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- CREW MEMBERS END -->
+	</div>
+	<!-- ABOUT PAGE END -->
+
+	<!-- CREATE USER NAME START -->
+	<div id="main-content" class="container">
+		<div id="title" class="container">
+			<h1>CHIT CHAT <i class="fa fa-comments-o"></i></h1>
+		</div>
+		<div id="header" class="container">
+			<div class="container">
+				<p class="lead">
+					<b>Create a username
+					<br>to enter the chatroom.</b></p>
+				<br>
+				<br>
+			</div>
+		</div>
+		<div id="nickWrap" class="container">
+			<p id="nickError" class="alert"></p>
+			<form id="setNick" class="form-inline">
+				<div class="form-group">
+					<input id="nickname" type="text" class="form-control" placeholder="Username" minlength="4" maxlength="12" autocomplete="off" autofocus>
+					<button class="active" id="join" type="submit" value="Join" class="btn btn-default" ><i class="fa fa-plus"></i> Create</button>
+				</div>
 			</form>
 		</div>
-		<div id="userwindow">
-			<div id="userlist"></div>
+	</div>
+	<!-- CREATE USER NAME END -->
+
+	<!-- CHAT WINDOW START -->
+
+	<div id="chat-container" class="container-fluid">
+		<div id="userwindow" class="container" align="center">
+			<h1 id="username-title"> Users</h1>
+			<ul class="list-group" id="userlist"></ul>
 		</div>
-	</div></center>
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+		<div id="chatwindow" class="container">
+			<div id="chat" class="container">
+				<ul id="msgs" class="list-unstyled"></ul>
+			</div>
+
+			<div id="input-message" class="container-fluid">
+				<form class="form-inline" id="send-message">
+					<div class="form-group">
+						<input type="text" class="form-control" id="message" placeholder="Your message..." autocomplete="off" maxlength="276">
+						<button type="submit" class="btn btn-default" id="send"><i class="fa fa-comment-o"></i> Send</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div>
+			<ul class="list-unstyled" id="updates"></ul>
+		</div>
+
+	</div>
+
+	<!-- CHAT WINDOW END -->
+
 	<script src="/socket.io/socket.io.js"></script>
-	<script src="/js/animate.js"></script>
-	
+	<script src="/js/client.js"></script>
+
 </body>
 
 </html>
